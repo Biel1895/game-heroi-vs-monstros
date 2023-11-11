@@ -99,10 +99,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const attackButton = document.querySelector('.attackButton');
 
-
 attackButton.addEventListener('click', () => {
     let gameAttackSom = document.getElementById('game-attack');
     let gameAttackSom2 = document.getElementById('game-attack2');
+
     gameAttackSom.play();
     function reproduzirComAtraso() {
 
@@ -113,12 +113,6 @@ attackButton.addEventListener('click', () => {
         }, 550);
     };
     reproduzirComAtraso();
-
-    heroImageContent.classList.add('jump-animation');
-
-    setTimeout(function () {
-        heroImageContent.classList.remove('jump-animation');
-    }, 600);
 });
 
 function restartGame() {
