@@ -1,0 +1,234 @@
+body {
+    background-image: url('./img/pixel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form input {
+    background-color: rgba(128, 205, 250, 0.363);
+}
+
+.class-card {
+    width: 20rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.822);
+
+}
+
+.class-card.selected {
+    border-color: #006cf0;
+    background-color: rgba(128, 205, 250, 0.838);
+}
+
+.img-guerreiro {
+    width: 300px;
+}
+
+.img-mago {
+    width: 190px;
+}
+
+.fightarea {
+    display: flex;
+    gap: 1%;
+}
+
+.ringue {
+    width: 100%;
+    border: 2px solid #ffffff;
+    height: 435px;
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.ringue-monstro {
+    width: 100%;
+    height: 435px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.fighter-image {
+    padding-bottom: 25px;
+    margin-top: 45px;
+}
+
+.fighter-image-monster {
+    padding-bottom: 25px;
+    margin-top: 45px;
+}
+
+/* Adicione estas linhas ao seu arquivo style.css */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.jump-animation {
+    animation: jump .9s ease-in-out;
+}
+
+
+#char,
+#monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+.attackButton {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 140px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 1.5rem;
+}
+
+.painel {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.log {
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 2px solid #000000;
+    height: 180px;
+    overflow-y: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape p {
+    padding: 2px;
+    font-size: .875rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.rodape p a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 950px) {
+    .hidden2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 100px;
+        background-color: rgba(255, 255, 255, 0.495);
+        padding: 1.25rem;
+        margin: 1rem;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+    .class-card {
+        width: 10rem;
+    }
+
+    .painel {
+        background-color: #00000050;
+    }
+
+    .img-guerreiro {
+        width: 110px;
+        margin-bottom: 40px;
+    }
+
+    .img-mago {
+        width: 60px;
+        margin-bottom: 40px;
+    }
+
+    .ringue, .ringue-monstro {
+        height: 215px;
+    }
+
+    .attackButton {
+        padding: 5px;
+        font-size: 1.2rem;
+        width: 130px;
+    }
+
+    .log {
+        height: 22%;
+        font-size: .875rem;
+    }
+
+    .rodape p {
+        padding: 1px;
+        font-size: .5rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 950px) and (orientation:portrait) {
+    .hidden3 {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) and (orientation:landscape) {
+    .hidden2 {
+        display: none;
+    }
+}

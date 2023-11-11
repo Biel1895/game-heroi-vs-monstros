@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis vs Monstros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <h2 class="hidden2 fw-bolder text-center">O jogo só será exibido em modo retrato.<br><br> Vire a tela do seu
+        aparelho!</h2>
+
+    <div class="form hidden3">
+        <form id="hero-form">
+            <h1>Crie seu Herói</h1>
+            <label for="hero-name">Nome do Herói:</label>
+            <input class="rounded-2" type="text" id="hero-name" name="heroName" required>
+            <div class="class-options d-flex flex-row mt-3 mb-2 gap-4">
+                <div class="card class-card p-1 p-lg-3" data-class="guerreiro">
+                    <h3>Guerreiro</h3>
+                    <img class="img-guerreiro mx-auto mt-0 pb-5 mt-lg-4" src="./assets/img/guerreiro.svg"
+                        alt="guerreiro">
+                    <ul class="list-unstyled text-start position-absolute bottom-0 ps-2 ps-lg-0">
+                        <li><span class="fw-bold">Vida:</span> 100</li>
+                        <li><span class="fw-bold">Ataque:</span> 10</li>
+                        <li><span class="fw-bold">Defesa:</span> 12</li>
+                    </ul>
+                </div>
+                <div class="card class-card p-1 p-lg-3" data-class="mago">
+                    <h3>Mago</h3>
+                    <img class="img-mago mx-auto pb-5" src="./assets/img/mago.svg" alt="mago">
+                    <ul class="list-unstyled text-start position-absolute bottom-0 ps-2 ps-lg-0">
+                        <li><span class="fw-bold">Vida:</span> 70</li>
+                        <li><span class="fw-bold">Ataque:</span> 18</li>
+                        <li><span class="fw-bold">Defesa:</span> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-primary fw-bold fs-5 rounded-3" type="submit" id="submit-hero">Criar
+                Herói</button>
+        </form>
+    </div>
+
+    <div class="fightarea hidden hidden3 m-2">
+        <div id="char">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <div class="name painel"></div>
+            <div id="ringue" class="ringue d-flex justify-content-center">
+                <img class="fighter-image" id="hero-image" src="" alt="Guerreiro/Mago">
+            </div>
+            <div>
+                <button class="attackButton fw-bold btn btn-primary">ATACAR</button>
+            </div>
+        </div>
+        <div id="monster">
+            <div class="lifebar">
+                <div class="bar" style="width: 10%;"></div>
+            </div>
+            <div class="name painel"></div>
+            <div class="ringue-monstro d-flex justify-content-center">
+                <img id="monster-image" class="fighter-image-monster" src="./assets/img/monstro1.svg" alt="Monstro">
+            </div>
+        </div>
+    </div>
+
+    <ul class="log hidden hidden3 fixed-bottom p-2 m-2"></ul>
+
+    <footer class="rodape d-flex position-fixed bg-primary">
+        <p>&#169; Desenvolvido por <span><a href="https://www.linkedin.com/in/biel1895/">Gabriel Rios</a></span></p>
+    </footer>
+
+    <audio id="game-music" src="./assets/sounds/game-music.mp3"></audio>
+    <audio id="game-start" src="./assets/sounds/game-start.mp3"></audio>
+    <audio id="game-attack" src="./assets/sounds/game-attack.mp3"></audio>
+    <audio id="game-attack2" src="./assets/sounds/game-attack2.mp3"></audio>
+
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
