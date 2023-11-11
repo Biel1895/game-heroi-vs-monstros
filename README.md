@@ -2,7 +2,7 @@
 
 Bem-vindo ao jogo "Heróis vs Monstros". Este jogo é uma aventura simples e envolvente onde você cria e comanda um herói em batalhas épicas contra monstros temíveis. Neste README, vamos explorar o processo de desenvolvimento, os desafios enfrentados e como você pode começar a jogar.
 
-![Capture](./assets/img/)
+![Capture](./assets/img/Captura-game.png)
 
 ### Desafios Enfrentados
 
@@ -33,7 +33,7 @@ O jogo está em constante evolução, e algumas melhorias futuras podem incluir:
 
 ## Como Executar
 
-Você pode acessar meu jogo [clicando aqui](https://project-spa-sass.vercel.app/).
+Você pode acessar meu jogo [clicando aqui](https://game-heroi-vs-monstros.vercel.app/).
 
 ## Como Jogar
 
