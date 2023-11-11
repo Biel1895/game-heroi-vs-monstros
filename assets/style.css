@@ -187,6 +187,10 @@ li {
 }
 
 @media (max-width: 950px) {
+    body {
+        overflow-y: scroll;
+    }
+
     .hidden2 {
         display: flex;
         justify-content: center;
@@ -200,12 +204,24 @@ li {
         font-size: 3rem;
     }
 
+    .titulo {
+        background-color: rgba(255, 255, 255, 0.34);
+        color: #000000;
+        border-radius: 20px;
+    }
+
+    .label {
+        background-color: rgba(255, 255, 255, 0.34);
+        color: #000000;
+        border-radius: 10px;
+    }
+
     .input {
         width: 50%;
     }
 
     .class-card {
-        width: 9rem;
+        width: 8rem;
     }
 
     .class-card h3 {
@@ -213,7 +229,7 @@ li {
     }
 
     .atributos {
-        font-size: 0.875rem;
+        font-size: 0.7rem;
     }
 
     .criar-heroi {
@@ -231,13 +247,13 @@ li {
     }
 
     .img-guerreiro {
-        width: 80px;
-        margin-bottom: 30px;
+        width: 70px;
+        margin-bottom: 25px;
     }
 
     .img-mago {
-        width: 45px;
-        margin-bottom: 30px;
+        width: 38px;
+        margin-bottom: 24px;
     }
 
     .ringue {
