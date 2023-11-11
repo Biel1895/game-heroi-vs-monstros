@@ -4,7 +4,6 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    overflow-y: auto;
 }
 
 .form {
@@ -187,10 +186,6 @@ li {
 }
 
 @media (max-width: 950px) {
-    body {
-        overflow-y: scroll;
-    }
-
     .hidden2 {
         display: flex;
         justify-content: center;
@@ -206,6 +201,7 @@ li {
 
     .form {
         margin-top: 60px;
+        overflow-y: scroll;
     }
 
     .titulo {
