@@ -2,7 +2,9 @@ body {
     background-image: url('./img/pixel.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .form {
