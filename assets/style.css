@@ -204,6 +204,10 @@ li {
         font-size: 3rem;
     }
 
+    .form {
+        margin-top: 50px;
+    }
+
     .titulo {
         background-color: rgba(255, 255, 255, 0.34);
         color: #000000;
