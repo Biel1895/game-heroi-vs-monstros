@@ -256,10 +256,6 @@ li {
         margin-bottom: 24px;
     }
 
-    .fightarea {
-        overflow: hidden;
-    }
-
     .ringue {
         height: 50vh;
     }
@@ -277,7 +273,6 @@ li {
     .log {
         height: 22%;
         font-size: .875rem;
-        overflow: hidden;
     }
 
     .rodape p {
